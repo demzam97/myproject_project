@@ -4,7 +4,7 @@
   - name: install package
     yum:
      name: httpd
-     state: present
+     state: present 
   - name: copy website
     copy:
      content: "Hello World"
@@ -15,6 +15,7 @@
      state: restarted
      enabled: true
   - name: create user
-     user: Dem
+    user:
+     name: Dem
      state: present
 
